@@ -25,8 +25,11 @@ const answers = [["всилу", "таккак", "потомучто", "впос�
 [11,12,44,21,35,54,4,23],
 [3578,1735,2138,5728,5296,8267,7184,4218]
 ]
-
-let errCount = prompt("Количество ошибок", 1);
+let date = prompt("Дата (XX.XX.XXXX)", '01.01.2024');
+let time = prompt("Время (XX:XX)",  '10:00');
+let timeElem = document.querySelector('#date')
+timeElem.textContent =`Сдана ${date} ${time} (МСК)`
+let errCount = prompt("Количество ошибок",);
 let i = 0
 let errList = [];
 while (i < errCount) {
